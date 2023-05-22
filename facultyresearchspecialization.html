@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini_project_1</title>
+    <style>
+        .ma {
+            border: 1px solid rgba(0, 0, 0, 0.89);
+            padding: 10px;
+            width: 750px;
+
+        }
+
+        .flex1 {
+            display: flex;
+
+            flex-direction: row;
+            position: relative;
+            margin: 10px;
+
+
+        }
+
+        .flex-item {
+            flex-direction: row;
+            margin-left: 20px;
+
+        }
+
+        input[type="button"] {
+            background-color: lightskyblue;
+            border-radius: 3px;
+            border: 2px solid black;
+        }
+
+        img {
+            height: 200px;
+        }
+
+        #img1 {
+            padding: 15px;
+
+        }
+
+        #logo {
+            height: 80px;
+        }
+
+        li {
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+
+        #hide {
+            color: whitesmoke;
+        }
+
+        img {
+
+            padding: 20px;
+        }
+
+        img:hover+#hide {
+
+            color: gray;
+
+        }
+
+        .flex {
+            flex-direction: row;
+        }
+
+        /* <style> */
+        ul li {
+            list-style: none;
+        }
+
+        .menu-bar {
+            display: inline-flex;
+            border: none;
+
+
+
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+            padding-left: -15px;
+        }
+
+        .submenu-1 {
+            display: none;
+            /* text-align: center; */
+        }
+
+        .menu-bar {
+            text-align: center;
+        }
+
+        .menu-bar ul li {
+            /* width: 120px; */
+            /* margin: 25px 0px 25px 20px; */
+            padding-left: 2px;
+            padding-right: 5px;
+        }
+
+        .menu-bar ul li:hover .submenu-1 {
+            display: block;
+            position: absolute;
+            width: 210px;
+            background-color: white;
+            margin-left: -45px;
+            margin-top: 15px;
+            text-align: center;
+        }
+
+        .menu-bar li:hover .submenu-1 ul {
+            display: block;
+            margin: 10px;
+        }
+
+        .menu-bar ul li:hover .submenu-1 li {
+            padding: 10px;
+            width: fit-content;
+            border-bottom: 1px dotted black;
+            /* background:transparent; */
+            border-radius: 0;
+            text-align: left;
+        }
+
+        .menu-bar ul {
+            padding: 0px 5px;
+        }
+
+        .menu-bar ul li {
+            padding: 0px 5px 10px 0px;
+        }
+
+        .submenu-1 ul li:hover {
+            background-color: rgb(42, 214, 205);
+            
+        }
+
+        .flex {
+            padding: 10px 70px;
+        }
+        .danger{
+            background-color: rgb(250, 149, 149);
+        }
+        table{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-weight: 100;
+        }
+        th{
+            color: rgba(0, 0, 0, 0.541);
+            font-weight:700
+        }
+    </style>
+
+
+
+</head>
+
+<body>
+    <center><img id="logo" src="mainlogo.png" alt="mainlogo" height="80px"></center>
+    <h2 style="text-align: center; color: red;">&nbsp;&nbsp;&nbsp; AUTONOMOUS CAMPUS</h2>
+    <div style="display: block; padding-left: 30px;background-color: lightseagreen;text-align: center;">
+        <a href="home.html" alt="Home_Page"><button
+                style="color: black;background-color: lightseagreen;border: none; margin: 10px;">Home</button></a>
+        <a href="About.html" alt="ABout_Page"><button
+                style="color: black;background-color: lightseagreen;border: none; margin: 10px;">About</button></a>
+        <a href="Academics.html" alt="Home_Page"><button
+                style="color: black;background-color: lightseagreen;border: none; margin: 10px;">Academics</button></a>
+        <a href="Admission.html" alt="Home_Page"><button
+                style="color: black;background-color: lightseagreen;border: none; margin: 10px;">Admission</button></a>
+
+        <a href="Gallery.html" alt="Gallery_Page"><button
+                style="color: black;background-color: lightseagreen;border: none; margin: 10px;">Gallery</button></a>
+        <a href="exambranch.html" alt="Gallery_Page"><button
+                style="color: black;background-color: lightseagreen;border: none; margin: 10px;">ExamBranch</button></a>
+        <a href="placements.html" alt="Gallery_Page"><button
+                style="color: black;background-color: lightseagreen;border: none; margin: 10px;">Placements</button></a>
+        <div class="menu-bar">
+            <ul>
+                <li><a> R & D</a>
+                    <div class="submenu-1">
+                        <ul style="text-align: center;">
+                            <li><a href="Research.html">Research Infrastructure</a> </li>
+                            <li><a href="facultyresearchspecialization.html">Faculty Specialization and Research Area</a> </li>
+                            <li><a href="researchoutcomes.html">Research Outcomes</a> </li>
+
+                        </ul>
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+
+    </div>
+
+    <br><br>
+    <div style="padding: 10px 20px;background-color: gray;">
+        <h2
+            style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;color: lightseagreen;">
+            Research Area </h2>
+
+    </div>
+    <h2 style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;color: red;text-align: center;">Faculty Specialization and Research Area
+    </h2>
+    <div style="padding-top: 30px;display: block;">
+        <table class="table" border="1"
+            style="border-collapse: collapse; padding-top: 30px;text-align: center;margin: auto;">
+            <tbody>
+                <tr class="text-center">
+                    <th colspan="4" class="col-span text-center">Department of ECE</th>
+                    <th></th>
+                </tr>
+
+                <tr class="">
+                    <th>SNO</th>
+                    <th>Name of faculty</th>
+                    <th>PG Specialization</th>
+                    <th>Research area</th>
+
+
+                </tr>
+                <tr class="danger">
+                    <td>1</td>
+                    <td>Dr. M Narsing Yadav</td>
+                    <td>Wireless Communication&gt;</td>
+                    <td>Cognitive Radio</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Dr N Rajesha Murthy</td>
+                    <td>Digital Electronics and Communication</td>
+                    <td>Real Time Operating System, Wireless Sensor Networks</td>
+                </tr>
+                <tr class="danger">
+                    <td>3</td>
+                    <td>Dr Zeeshan Vakil </td>
+                    <td>Nanotechnology</td>
+                    <td>Nanotechnology</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Dr Om Prakash</td>
+                    <td>Electrical
+                        and Instrumentation</td>
+                    <td>Optimization</td>
+                </tr>
+                <tr class="danger">
+                    <td>5</td>
+                    <td>S C Venkateshwarlu</td>
+                    <td>Digital Systems Computer Electronics</td>
+                    <td>Speech Processing, image processing</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>R Raja Kishore</td>
+                    <td>Communication Engineering
+                    </td>
+                    <td>Wireless Sensor Networks</td>
+                </tr>
+                <tr class="danger">
+                    <td>7</td>
+                    <td>Thudi Vishnu</td>
+                    <td>Embedded Systems</td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>B Satish Chandra</td>
+                    <td>Systems and Signal Processing</td>
+                    <td>Signal Processing</td>
+                </tr>
+                <tr class="danger">
+                    <td>9</td>
+                    <td>K Satyavathi</td>
+                    <td>DECS</td>
+                    <td>Antennas</td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>P Yugender</td>
+                    <td>Digital Systems Computer Electronics </td>
+                    <td></td>
+                </tr>
+                <tr class="danger">
+                    <td>11</td>
+                    <td>Vamshi
+                        Kollipara </td>
+                    <td>Embedded Systems</td>
+                    <td>Smart Contact Lens</td>
+                </tr>
+                <tr>
+                    <td>12</td>
+                    <td>D Magbul Basha</td>
+                    <td>VLSI System Design</td>
+                    <td>Verilog
+                        HDL</td>
+                </tr>
+                <tr class="danger">
+                    <td>13</td>
+                    <td>M Naresh</td>
+                    <td>VLSI System Design
+                    </td>
+                    <td>Design of Low Power RF Circuits Using Nano Transistors</td>
+                </tr>
+                <tr>
+                    <td>14 </td>
+                    <td>M Ganesh </td>
+                    <td>Signal Processing and Control
+                    </td>
+                    <td>Statistical Signal Processing
+                    </td>
+                </tr>
+                <tr class="danger">
+                    <td>15</td>
+                    <td>B Anath Kumar </td>
+                    <td>Embedded Systems</td>
+                    <td>Coding Theory</td>
+                </tr>
+                <tr>
+                    <td>16 </td>
+                    <td>P Suresh Babu</td>
+                    <td>Wireless and Mobile communication </td>
+                    <td>Video Processing </td>
+                </tr>
+                <tr class="danger">
+                    <td>17</td>
+                    <td>S Mallesh</td>
+                    <td>VLSI and System Design</td>
+                    <td>Verilog HDL</td>
+                </tr>
+                <tr>
+                    <td>18 </td>
+                    <td>T Vijaya Bhaskar Reddy </td>
+                    <td>Computers and Communications </td>
+                    <td>Communication</td>
+                </tr>
+                <tr class="danger">
+                    <td>19 </td>
+                    <td>B Anil Kumar</td>
+                    <td>VLSI </td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td>20</td>
+                    <td>K LovaRaju</td>
+                    <td>ECE</td>
+                    <td>Communication</td>
+                </tr>
+                <tr class="danger">
+                    <td>21 </td>
+                    <td>P Vinod Kumar
+                    </td>
+                    <td> DECS</td>
+                    <td> Communication Systems</td>
+                </tr>
+                <tr>
+                    <td>22</td>
+                    <td>P Prathyusha</td>
+                    <td>Embedded Systems</td>
+                    <td>IOT</td>
+                </tr>
+                <tr class="danger">
+                    <td>23</td>
+                    <td>Santhoshi Bhavani K </td>
+                    <td> VLSI Design </td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td>24</td>
+                    <td>T Sai Krishna </td>
+                    <td>Wireless and Mobile communication</td>
+                    <td> &nbsp;</td>
+                </tr>
+                <tr class="danger">
+                    <td>25 </td>
+                    <td> M Venkat Reddy </td>
+                    <td> Wireless and Mobile communication
+                    </td>
+                    <td>Ad hoc Networks </td>
+                </tr>
+                <tr>
+                    <td>26</td>
+                    <td> G Vignatha </td>
+                    <td>VLSI</td>
+                    <td> &nbsp; </td>
+                </tr>
+                <tr class="danger">
+                    <td>27</td>
+                    <td> V Nagarani </td>
+                    <td> Embedded Systems</td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td>28</td>
+                    <td> D Saritha </td>
+                    <td> Embedded Systems</td>
+                    <td>RTOS</td>
+                </tr>
+                <tr class="danger">
+                    <td>29</td>
+                    <td> G Spandana </td>
+                    <td> EmbeddedSystems</td>
+                    <td> &nbsp; </td>
+                </tr>
+                <tr>
+                    <td>30</td>
+                    <td> N Sindhuja </td>
+                    <td> Embedded Systems</td>
+                    <td> &nbsp; </td>
+                </tr>
+                <tr class="danger">
+                    <td>31 </td>
+                    <td> B Chandana </td>
+                    <td>Embedded Systems </td>
+                    <td> &nbsp; </td>
+                </tr>
+                <tr>
+                    <td>32</td>
+                    <td> E Aparna </td>
+                    <td> Embedded Systems
+                    </td>
+                    <td> &nbsp; </td>
+                </tr>
+                <tr class="danger">
+                    <td>33
+                    </td>
+                    <td> P Sri Ram </td>
+                    <td> Embedded Systems</td>
+                    <td> RTOS </td>
+                </tr>
+                <tr>
+                    <td>34
+                    </td>
+                    <td> P Dilip Yadav</td>
+                    <td>Embedded Systems </td>
+                    <td> &nbsp; </td>
+                </tr>
+                <tr class="danger">
+                    <td> 35 </td>
+                    <td> B Sharan Kuma </td>
+                    <td> Embedded Systems </td>
+                    <td> RTOS </td>
+                </tr>
+                <tr>
+                    <td> 36 </td>
+                    <td> G Bala gangadhar Tilak </td>
+                    <td> VLSI &amp; ES </td>
+                    <td> &nbsp; </td>
+                </tr>
+                <tr class="danger">
+                    <td>37</td>
+                    <td> M Ajay Kumar </td>
+                    <td> Wirelessand Mobile communication</td>
+                    <td> WirelessCommunication </td>
+                </tr>
+                <tr>
+                    <td>38 </td>
+                    <td> MVamshi Krishna </td>
+                    <td> Wireless and Mobile communication </td>
+                    <td> Video Processing </td>
+                </tr>
+                <tr class="danger">
+                    <td>39
+                    </td>
+                    <td> E Chandra Kumar </td>
+                    <td> Wireless and Mobile communication </td>
+                    <td> Tele Communication </td>
+                </tr>
+                <tr>
+                    <td> 40 </td>
+                    <td> P Srilatha </td>
+                    <td> Digital Systems Computer Electronic </td>
+                    <td> Image Processing </td>
+                </tr>
+                <tr class="danger">
+                    <td> 41</td>
+                    <td> D Mounika </td>
+                    <td> EmbeddedSystems </td>
+                    <td> ARM Processor </td>
+                </tr>
+                <tr>
+                    <td>42 </td>
+                    <td> Uma Rani </td>
+                    <td> VLSI&amp; ES </td>
+                    <td> Communication </td>
+                </tr>
+                <tr class="danger">
+                    <td>43</td>
+                    <td> Balu naik </td>
+                    <td> Systems and Signal Processing </td>
+                    <td> Signal Processing </td>
+                </tr>
+                <tr>
+                    <td>44 </td>
+                    <td> N Naveen Kumar </td>
+                    <td> VLSI and System Design </td>
+                    <td> FPGA and CPLD</td>
+                </tr>
+                <tr class="danger">
+                    <td>45 </td>
+                    <td> S Abdul Rehman </td>
+                    <td> DECS </td>
+                    <td> &nbsp; </td>
+                </tr>
+                <tr>
+                    <td>46 </td>
+                    <td> SohelKhan </td>
+                    <td> VLSI &amp; ES </td>
+                    <td> &nbsp; </td>
+                </tr>
+                <tr class="danger">
+                    <td>47 </td>
+                    <td> Ch Sireesha </td>
+                    <td> &nbsp; </td>
+                    <td> &nbsp; </td>
+                </tr>
+                <tr>
+                    <td>48</td>
+                    <td> M K Praveena </td>
+                    <td> &nbsp; </td>
+                    <td> &nbsp; </td>
+                </tr>
+                <tr class="danger">
+                    <td>49 </td>
+                    <td> &nbsp;</td>
+                    <td> &nbsp; </td>
+                    <td>&nbsp; </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <footer>
+        <div style="background-color: rgb(39, 39, 69);color: white;display: block;padding: 10px 50px;">
+          
+          <div class="flex" style="display: inline-flex;" >
+            
+            <ul class="flex-item" id="foot" style="flex-direction: column;color: white;display: inline-block;padding-right: 650px;">
+              <h4> Quick Links </h4>
+              <li><a href="home.html" style="color: white;">home</a></li>
+              <li><a href="About.html" style="color: white;">About</a></li>
+              <li><a href="Academics.html" style="color: white;">Academics</a></li>
+              <li><a href="Admission.html" style="color: white;">Admission</a></li>
+            </ul>
+      
+            <div class="flex" style="flex-direction: row;display: flexbox;justify-content: end;">
+              <ul>
+              <h4>Address</h4>
+              <li>Maisammaguda</li>
+              <li>Gundlapochampally (Village),</li>
+            <li>Near Dhulapally, Medchal</li>
+            <li>Malkajgiri (District), Secunderabad – 500 100.</li>
+            </ul>
+      
+              
+            </div>
+            
+          </div>
+          <div style="display: flex;">
+            <small style="color: gray;margin: auto;">Copyright ©. All Rights Reserved to MRIET | Designed & Developed by lokesh Technologies Pvt. Ltd.</small>
+          </div>
+          
+      
+        </div>
+        
+       </footer>
+
+
+
+
+
+</body>
+
+</html>

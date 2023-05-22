@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mini_project_1</title>
+  <style>
+    .ma {
+      border: 1px solid rgba(0, 0, 0, 0.89);
+      padding: 10px;
+      width: 750px;
+
+    }
+
+    .flex1 {
+      display: flex;
+
+      flex-direction: row;
+      position: relative;
+      margin: 10px;
+
+
+    }
+
+    .flex-item {
+      flex-direction: row;
+      margin-left: 20px;
+
+    }
+
+    input[type="button"] {
+      background-color: lightskyblue;
+      border-radius: 3px;
+      border: 2px solid black;
+    }
+
+    img {
+      height: 200px;
+    }
+
+    #img1 {
+      padding: 15px;
+
+    }
+
+    #logo {
+      height: 80px;
+    }
+
+    li {
+      margin-top: 5px;
+      margin-bottom: 5px;
+    }
+
+    #hide {
+      color: whitesmoke;
+    }
+
+    img {
+
+      padding: 20px;
+    }
+
+    img:hover+#hide {
+
+      color: gray;
+
+    }
+
+    .flex {
+      flex-direction: row;
+    }
+    /* <style> */
+  ul li{
+    list-style:none ;
+}
+.menu-bar{
+  display: inline-flex;
+  border: none;
+  
+  
+  
+}
+a{
+  text-decoration: none;
+  color: black;
+  padding-left: -15px;
+}
+.submenu-1{
+  display: none;
+  /* text-align: center; */
+}
+
+.menu-bar{
+  text-align: center;
+}
+.menu-bar ul li{
+  /* width: 120px; */
+  /* margin: 25px 0px 25px 20px; */
+  padding-left: 2px;
+  padding-right: 5px;
+}
+.menu-bar ul li:hover .submenu-1{
+  display: block;
+  position: absolute;
+
+  background-color:white;
+  margin-left: -45px;
+  margin-top: 15px;
+  text-align: center;
+}
+.menu-bar li:hover .submenu-1 ul{
+  display: block;
+  margin: 10px;
+}
+.menu-bar ul li:hover .submenu-1 li{
+  padding: 10px;
+  width: fit-content;
+  border-bottom: 1px dotted black;
+  /* background:transparent; */
+  border-radius: 0;
+  text-align: left;
+}
+.menu-bar ul {
+    padding: 0px 5px;
+  }
+  .menu-bar ul li{
+    padding: 0px 5px 10px 0px; 
+  }
+
+.submenu-1 ul li:hover{
+  background-color: rgb(42, 214, 205);
+}</style>
+
+  </style>
+
+</head>
+
+<body>
+  <center><img id="logo" src="mainlogo.png" alt="mainlogo" height="80px"></center>
+  <h2 style="text-align: center; color: red;">&nbsp;&nbsp;&nbsp; AUTONOMOUS CAMPUS</h2>
+  <div style="display: block; padding-left: 30px;background-color: lightseagreen;text-align: center;">
+    <a href="home.html" alt="Home_Page"><button
+        style="color: black;background-color: lightseagreen;border: none; margin: 10px;">Home</button></a>
+    <a href="About.html" alt="ABout_Page"><button
+        style="color: black;background-color: lightseagreen;border: none; margin: 10px;">About</button></a>
+    <a href="Academics.html" alt="Home_Page"><button
+        style="color: black;background-color: lightseagreen;border: none; margin: 10px;">Academics</button></a>
+    <a href="Admission.html" alt="Home_Page"><button
+        style="color: black;background-color: lightseagreen;border: none; margin: 10px;">Admission</button></a>
+
+    <a href="Gallery.html" alt="Gallery_Page"><button
+        style="color: black;background-color: lightseagreen;border: none; margin: 10px;">Gallery</button></a>
+    <a href="exambranch.html" alt="Gallery_Page"><button
+        style="color: black;background-color: lightseagreen;border: none; margin: 10px;">ExamBranch</button></a>
+        <a href="placements.html" alt="Gallery_Page"><button
+          style="color: black;background-color: lightseagreen;border: none; margin: 10px;">Placements</button></a>
+          <div class="menu-bar">
+            <ul >
+              <li><a> R & D</a>
+                <div class="submenu-1">
+                  <ul style="text-align: center;">
+                    <li><a href="Research.html">Research Infrastructure</a> </li>
+                    <li><a href="facultyresearchspecialization.html">Faculty Specialization and Research Area</a> </li>
+                    <li><a href="researchoutcomes.html">Research Outcomes</a> </li>
+        
+                  </ul>
+                </div>
+              
+              </li>
+            </ul>
+          </div>
+        
+
+  </div>
+
+  <br><br>
+  <div style="padding: 10px 20px;background-color: gray;">
+    <h2
+      style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;color: lightseagreen;">
+      Placements </h2>
+  </div>
+
+  <div style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;text-align: center;">
+    <h2>OUR<span style="color: lightseagreen;">CREW</span></h2>
+  </div>
+
+
+  <div class="flex" style="text-align: center;background-color: whitesmoke;">
+    <div style="display: inline-block;position: relative;"><img src="raj.jpg">
+      <div id="hide" style="text-align: center;"> DR. N RAJESESWARAN <br> <small> Dean Training & Placement</small>
+      </div>
+    </div>
+    <div style="display: inline-block;position: relative;"><img src="VAMSI.jpg">
+      <div id="hide" style="text-align: center;">MR.BALU NAIK
+        <br> <small> Training & Placement Coordinator </small>
+      </div>
+    </div>
+    <div style="display: inline-block;position: relative;"><img src="NAG.jpg">
+      <div id="hide" style="text-align: center;">MR.G.NAGAPPA <br> <small> Dean Training & Placement</small></div>
+    </div>
+    <div style="display: inline-block;position: relative;"><img src="Sunil.jpg">
+      <div id="hide" style="text-align: center;"> MR.B. SUNIL <br> <small> Dean Training & Placement</small></div>
+    </div>
+
+
+    <!-- <div class="flex-item" style="width: 200px;border: 2px solid black;text-align: center;">
+            <img src="raj.jpg" > 
+        <div  class="hide"> DR. N RAJESESWARAN
+        <span><small style="color: grey">Dean Training & Placement</small></span></div>
+        <div class="flex-item" style="width: 200px;border: 2px solid black;text-align: center;">
+          <img src="raj.jpg" > 
+      <div  class="hide"> DR. N RAJESESWARAN
+      <span><small style="color: grey">Dean Training & Placement</small></span></div>
+      </div>
+        
+        </div> -->
+    <!-- <img src=".jpg" >
+        <img src="shaik.jpg" >
+        <img src="SUJATHA.jpg" > -->
+
+
+
+  </div>
+  <div>
+    <h2>About <span style="color: lightseagreen;font-family:Arial, Helvetica, sans-serif;"> Training&Placements</span>
+    </h2>
+    <h3 style="font-family: Arial, Helvetica, sans-serif;">Vision
+    </h3>
+    <small style="font-family:Arial, Helvetica, sans-serif;color: gray;">To empower students to make life long,responsible and
+      meaningful choices in a global and dynamic world.The College has an exclusive Placement and Training Centre to
+      facilitate on-campus Placement opportunities to the students.</small>
+
+    <h3 style="font-family: Arial, Helvetica, sans-serif;">Achievements</h3>
+    <small style="font-family:Arial, Helvetica, sans-serif;color: gray;">The Centre has a professor in-charge of the activities. The Centre provides pre-placement training in soft
+      skills to all pre-final year students to enable them to acquaint to the current corporate requirements.
+      The centre facilitates students to face interviews & get jobs of their choice. More than 100 top and well
+      established companies across the country/abroad from all sectors visit the campus for recruitment. Every year more
+      than 80% of students from all the programs are being placed.The following are some of the activities which ensure
+      progression to employment:The Placement Centre provides a seven day training programme in soft skills (like
+      Personality Development, CV Writing, Communication Skills, Aptitude tests, Interview Technique etc.) to all
+      students during their pre-final year. The students are given a choice of opting for two job opportunities (choice
+      being one core & one IT Company during the recruitments). Guest lectures and special invitee lecture series
+      organized for all the branches of students from industry experts through the Placement Centre.Internship
+      opportunities have been provided for UG & PG students by various companies like AMAZON,TCS,JP MORGAN, ACCENTURE.
+      Most of the top companies across the nation, visit us for Campus Recruitment.</small>
+  </div>
+  <footer>
+    <div style="background-color: rgb(39, 39, 69);color: white;display: block;padding: 10px 50px;">
+      
+      <div class="flex" style="display: inline-flex;" >
+        
+        <ul class="flex-item" id="foot" style="flex-direction: column;color: white;display: inline-block;padding-right: 650px;">
+          <h4> Quick Links </h4>
+          <li><a href="home.html" style="color: white;">home</a></li>
+          <li><a href="About.html" style="color: white;">About</a></li>
+          <li><a href="Academics.html" style="color: white;">Academics</a></li>
+          <li><a href="Admission.html" style="color: white;">Admission</a></li>
+        </ul>
+  
+        <div class="flex" style="flex-direction: row;display: flexbox;justify-content: end;">
+          <ul>
+          <h4>Address</h4>
+          <li>Maisammaguda</li>
+          <li>Gundlapochampally (Village),</li>
+        <li>Near Dhulapally, Medchal</li>
+        <li>Malkajgiri (District), Secunderabad – 500 100.</li>
+        </ul>
+  
+          
+        </div>
+        
+      </div>
+      <div style="display: flex;">
+        <small style="color: gray;margin: auto;">Copyright ©. All Rights Reserved to MRIET | Designed & Developed by lokesh Technologies Pvt. Ltd.</small>
+      </div>
+      
+  
+    </div>
+   
+   </footer>
+
+
+
+
+</body>
+
+</html>
